@@ -1,0 +1,262 @@
+/*[ Base ]*/
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NanumSquareNeo-Variable';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/NanumSquareNeo-Variable.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    list-style: none; 
+    text-decoration: none !important;
+    border-collapse: collapse;
+    margin: 0;
+    padding: 0;
+    color: #000;
+    font-family: 'GmarketSansMedium';
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/*[ Header ]*/
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    display: flex;
+    width: 100%;
+    height: 80px;
+    background-color: black;
+}
+
+.header-logo {
+    margin-left: 200px;
+    width: 300px;
+    height: 80px;
+    background: url('/Assets/Img/Header-Logo.png')
+}
+
+.nav-ul {
+    display: flex;
+    justify-content: flex-end;
+    width: calc(100% - 650px);
+    line-height: 80px;
+}
+
+.nav-ul > li {
+    margin-right: 30px;
+    font-size: 22px;
+    line-height: 80px;
+}
+
+.nav-ul > li > a {
+    color: #fff !important;
+    transition: 0.4s;
+}
+
+.nav-ul > li > a:hover {
+    color: rgb(131, 131, 131) !important;
+}
+
+/*[ Home ]*/
+#home {
+    margin-top: 80px;
+    width: 100%;
+    height: 1000px;
+    background-color: black;
+}
+
+.home-title {
+    text-align: center;
+}
+
+.home-title > h1 {
+    color: #fff;
+    padding-top: 15.5%;
+    text-align: left;
+    margin-left: 257px;
+    font-weight: bolder;
+    font-size: 90px;
+}
+
+.home-title > h2 {
+    color: #fff;
+    margin-top: -30px;
+    font-weight: bolder;
+    font-size: 125px;
+}
+
+/*[ Notice ]*/
+#notice {
+    height: 1000px;
+}
+
+.notice-wrap > h1{
+    padding-top: 13%;
+    font-weight: bolder;
+    text-align: center;
+    font-size: 120px;
+}
+
+.notice-box {
+    width: 1320px;
+    height: 300px;
+    box-shadow: 0 1px 10px rgb(54 54 54 / 30%);
+    border-radius: 3px;
+    margin: 0 auto;
+}
+
+.notice-box > h1 {
+    font-family: 'NanumSquareNeo-Variable';
+    font-weight: lighter;
+    margin-left: 40px;
+    padding-top: 30px;
+    font-size: 20px;
+}
+
+.btn {
+    font-family: 'NanumSquareNeo-Variable' !important;
+    background: #fff;
+    width: 150px;
+    height: 50px;
+    margin-left: 30px;
+    margin-top: 15px;
+    color: #000;
+    font-size: 20px;
+    transition: 0.5s;
+    cursor: pointer;
+    margin-left: 77%;
+    margin-top: 30px;
+    border: 0;
+}
+
+.btn:hover {
+    background: #000;
+    color: #fff;
+}
+
+.btn-dark {
+    font-family: 'NanumSquareNeo-Variable' !important;
+    background: #000;
+    width: 150px;
+    height: 50px;
+    margin-left: 30px;
+    margin-top: 15px;
+    color: #fff;
+    font-size: 20px;
+    transition: 0.5s;
+    cursor: pointer;
+    margin-left: 77%;
+    margin-top: 30px;
+    border: 0;
+}
+
+.btn-dark:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+/*[ Member ]*/
+#member {
+    height: 1000px;
+    background: #000;
+}
+
+.member-wrap > h1 {
+    padding-top: 13%;
+    font-weight: bolder;
+    text-align: center;
+    font-size: 120px;
+    color: #fff;
+}
+
+.member-profiles {
+    display: flex;
+    width: 1320px;
+    margin: 0 auto;
+}
+
+.member-profiles > li {
+    flex: 1;
+    width: 150px;
+    height: 204px;
+    margin-right: 30px;
+}
+
+.profile-name {
+    color: #fff;
+    font-weight: lighter;
+    margin-top: 220px;
+    text-align: center;
+}
+
+.first-profile {
+    margin-left: 30px;
+}
+
+.btn-light {
+    margin-top: 80px !important;
+}
+
+.profile-1 {
+    background: url('/Assets/Img/Profile/Geonbbang.png');
+}
+
+.profile-2 {
+    background: url('/Assets/Img/Profile/YoubuG.png');
+}
+.profile-3 {
+    background: url('/Assets/Img/Profile/Remo_jjing.png');
+}
+.profile-4 {
+    background: url('/Assets/Img/Profile/Lomun.png');
+}
+.profile-5 {
+    background: url('/Assets/Img/Profile/Seufa.png');
+}
+
+/*[ Apply ]*/
+#apply {
+    height: 1000px;
+}
+
+.apply-wrap > h1 {
+    padding-top: 5%;
+    font-weight: bolder;
+    text-align: center;
+    font-size: 120px;
+    color: #000;
+}
+
+.apply-wrap > h2,
+.apply-wrap > h2 > a {
+    font-family: 'NanumSquareNeo-Variable' !important;
+    font-weight: lighter;
+    text-align: center;
+    margin-top: -15px;
+    margin-bottom: 20px;
+}
+
+.apply-wrap > h2 > a {
+    color: #0d6efd;
+}
+
+.form {
+    border: 0;
+    margin-left: 26%;
+}
+
+.form::-webkit-scrollbar {
+    overflow: hidden;
+}
